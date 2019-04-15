@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+# _*_coding:utf-8_*_
+
+from AppTest.Common import *
+
+
+class MyTestCase(unittest.TestCase):
+    @classmethod
+    def setUp(self):
+        warnings.filterwarnings("ignore")
+        self.case_name = os.path.basename(__file__)
+        browse = BrowserEngine(self)
+        self.web_driver = browse.open_browser(self, url=WebControlServer.web_url)
+
+    @classmethod
+    def tearDown(self):
+        logger.info("收尾工作")
+        Common.report_screen_shot(self, self.case_name)
+        Common.quit(self)
+
+    def test_step(self):
+        u"""PC—忘记密码界面输入已过期的验证码"""
+        logger.info("登录后端")
+        Common.login_web_portal(self, Content.register_count, Content.login_password)
+
+        logger.info("点击修改密码")
+        per_info = Common.get_result_by_class_name_blank(self, "div", ClassName.set_personal_info)
+        Common.touch_tag_name_by_element(self, per_info, "a", 1)
+
+        logger.info("查看是否进入修改密码界面")
+        text_1 = Common.get_text_by_class_name(self, ClassName.title, "h3")
+        self.assertTrue(Common.check_text_in_list(self, text_1, "修改账号密码"))
+
+        logger.info("等待5分钟之后输入验证码")
+        Common.touch_by_id(self, ID.getCodeFormCodeBtn)
+        input_ele = Common.get_results_by_class_name_blank(self, "input", ClassName.ivu_input)
+        ident_code = Common.get_identifying_code(self, Content.register_count)
+        for i in range(11):
+            Common.wait(self, 30)
+            Common.touch_by_element(self, input_ele[0])
+        Common.send_text_by_element(self, input_ele[0], ident_code)
+        Common.touch_by_id(self, ID.codeFormNextBtn)
+
+        logger.info("查看是否有错误提示")
+        err_tip = Common.get_text_by_class_name(self, ClassName.sweet_alert_showsweetalert_visible, "div")
+        self.assertTrue(Common.check_text_in_list(self, err_tip, "验证码已失效,请重新获取"))

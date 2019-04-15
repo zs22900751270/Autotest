@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link REL="SHORTCUT ICON" HREF="{% static "img/favicon.ico" %}"/>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+</head>
+<body>
+
+<p>result:<span id="result2"></span></p>
+<button type="button" id="start">开始</button></br>
+<p>运行状态：<span id="report">运行中，莫慌</span></p>
+<p>报告路径：<span id="report_path">点击显示报告路径</span></p>
+<form method="get" action="/search/">
+    {% csrf_token %}
+    <input placeholder="请输入用例编号" style="width: 200px" id="searchNumberInput" name="searchNumberInput">
+    <button type="submit" id="searchNumberButton">搜索</button>
+</form>
+<button type="button" id="allSelect">全选</button>
+<button type="button" id="cancelAllSelect">取消全选</button>
+<button type="button" id="toEnd">到底端</button>
+<div>用例数：<p id="caseLen"></p></div>
+<ul>
+    {% load pagination_tags %}
+{#    {% autopaginate all_case_number 30 %}#}
+    {% for i in all_case_number %}
+        <p><input type="checkbox" id="case_number" value="{{ i }}" checked/>{{ i }}</p>
+    {% endfor %}
+{#    {% paginate %}#}
+</ul>
+<button type="button" id="toTop">到顶端</button>
+</body>
+</html>
