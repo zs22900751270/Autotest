@@ -776,6 +776,7 @@ class ClassName:
     ivu_modal_content = "ivu-modal-content"
     ivu_select_item = "ivu-select-item"
     ivu_row = "ivu-row"
+    blue_btn_opertion_ivu_btn = "blue-btn opertion-btn ivu-btn"
     ivu_poptip_body_content_inner = "ivu-poptip-body-content-inner"
     sql_operate = "sql-operate"
     ivu_btn_warning = "ivu-btn ivu-btn-warning"
@@ -935,6 +936,7 @@ class ClassName:
     blue_btn = "blue-btn"
     status = "status"
     tips = "tips"
+    wrap_mine = "wrap mine"
     letter_wrap = "letter-wrap"
     back_btn = "back-btn"
     white_btn = "white-btn"
@@ -977,6 +979,8 @@ class ClassName:
 
 
 class ID:
+    dataOpen = "dataOpen"
+    loginBtn = "loginBtn"
     outportUserDataBtn = "outportUserDataBtn"
     addRoleBtn = "addRoleBtn"
     deleteRoleGroupBtn = "deleteRoleGroupBtn"

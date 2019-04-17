@@ -7,7 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from AppTest.TestRunner import *
 from AppTest.Common.Content import *
-# from AppTest.Driver.Phone_Driver import *
 from AppTest.Common.Ldap import *
 
 '''
@@ -360,6 +359,7 @@ class BaseOperate:
         logger.info("继续2")
         BaseOperate.touch_id_by_index(self, PhoneControl.id_ok_button)
         logger.info("继续3")
+        BaseOperate.wait(self, 5)
         BaseOperate.touch_id_by_index(self, PhoneControl.id_done_button)
         BaseOperate.wait(self, 5)
 
@@ -732,6 +732,17 @@ class BaseOperate:
                                                   "select realname from user where phone='%s'" % phone_num,
                                                   "scap")
         return friend_name
+
+    def get_mail_address_by_user(self, phone):
+        """"""
+        sql = "select email from user where phone='%s'" % phone
+        mail = BaseOperate.get_info_by_sql(self, sql, "scap")
+        return mail
+
+    def modify_mail_address_by_user(self, phone, mail):
+        """"""
+        sql = "update scap.user set email='%s' where phone='%s'" % (mail, phone)
+        BaseOperate.operate_sql(self, sql, "scap")
 
     def creat_friend_by_sql(self, user_phone, friend_phone):
         """

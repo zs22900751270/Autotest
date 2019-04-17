@@ -1,0 +1,19 @@
+2019-04-15 15:40:40,638 - AppTest - INFO - 获取driver成功
+2019-04-15 15:40:40,639 - AppTest - INFO - D:/Autotest/AppTest/resource/Apk/
+2019-04-15 15:40:45,668 - AppTest - INFO - 继续
+2019-04-15 15:40:56,022 - AppTest - INFO - 继续2
+2019-04-15 15:41:00,235 - AppTest - INFO - 继续3
+2019-04-15 15:41:21,996 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-15 15:41:26,208 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-15 15:41:30,587 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-15 15:41:34,895 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-15 15:41:39,179 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button不存在于当前界面
+2019-04-15 15:41:39,261 - AppTest - INFO - com.hqd.app_manager:id/btn_selectNegative存在于当前界面
+2019-04-15 15:41:56,796 - WebTest - INFO - 输入手机号码
+2019-04-15 15:42:00,981 - WebTest - INFO - 删除输入的手机号码
+2019-04-15 15:42:01,168 - WebTest - INFO - 判断手机号删除正常
+2019-04-15 15:42:01,768 - WebTest - INFO - 重新输入手机号码, 并点击发送验证码
+2019-04-15 15:42:09,953 - WebTest - INFO - 判断是否可以获取到验证码
+2019-04-15 15:42:15,004 - AppTest - INFO - identify code:529231
+2019-04-15 15:42:15,007 - AppTest - INFO - 截图失败或者单独运行时不截图
+2019-04-15 15:42:15,007 - AppTest - INFO - -------------------case_Sprint1_android_0001.py test finish------------------

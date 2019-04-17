@@ -16,7 +16,7 @@ class MyTestCase(unittest.TestCase):
     @classmethod
     def tearDown(self):
         BaseOperate.report_screen_shot(self, self.case_name)
-        # BaseOperate.uninstallApp(self, PhoneControl.package_name)
+        BaseOperate.uninstallApp(self, PhoneControl.package_name)
         BaseOperate.quit(self)
 
     def test_step(self):

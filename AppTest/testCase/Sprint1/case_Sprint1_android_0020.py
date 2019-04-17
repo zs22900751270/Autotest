@@ -32,12 +32,10 @@ class MyTestCase(unittest.TestCase):
         BaseOperate.touch_id_by_index(self, PhoneControl.id_me_icon)
 
         logger.info("设置真实姓名为空")
-        BaseOperate.touch_id_by_index(self, PhoneControl.id_true_name)
-        BaseOperate.sendTextById(self, PhoneControl.id_infor_modify, "ttttt")
+        BaseOperate.touch_id_by_index(self, PhoneControl.id_mail)
+        BaseOperate.sendTextById(self, PhoneControl.id_infor_modify, Content.register_mail_address)
         BaseOperate.touch_id_by_index(self, PhoneControl.id_toolbar_right_tv)
-        result = BaseOperate.checkIfIdExist(self, PhoneControl.id_true_name)
+        result = BaseOperate.checkIfIdExist(self, PhoneControl.id_mail)
         self.assertTrue(result)
 
 
-
-    

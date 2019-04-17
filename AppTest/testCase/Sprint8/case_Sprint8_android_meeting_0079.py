@@ -72,7 +72,7 @@ class MyTestCase(unittest.TestCase):
 
         logger.info("点击进入会议详情")
         BaseOperate.touch_id_by_index(self, PhoneControl.id_spinner)
-        BaseOperate.touch_id_by_index(self, PhoneControl.id_tv_tinted_spinner, 1)
+        BaseOperate.touch_id_by_index(self, PhoneControl.id_tv_tinted_spinner, 2)
         BaseOperate.touch_text_by_class_name(self, PhoneControl.class_name_TextView, "meeting_test")
 
         logger.info("判断是否进入会议详情界面")
@@ -88,6 +88,3 @@ class MyTestCase(unittest.TestCase):
         self.assertFalse(res2)
         self.assertFalse(res3)
 
-
- 
-     

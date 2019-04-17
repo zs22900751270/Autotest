@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
 
         logger.info("判断是否进入创建任务界面")
         title_name = BaseOperate.get_text_by_id(self, PhoneControl.id_toolbar_title_tv)
-        self.assertEqual(title_name, "新建任务")
+        self.assertEqual(title_name, "创建任务")
 
         logger.info("进入选择联系人界面")
         BaseOperate.touch_id_by_index(self, PhoneControl.id_executor_layout)

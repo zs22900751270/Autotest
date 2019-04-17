@@ -26,7 +26,7 @@ class MyTestCase(unittest.TestCase):
         BaseOperate.startActivity(self, PhoneControl.package_name, PhoneControl.activity_name)
 
         logger.info("登录账号密码")
-        # BaseOperate.app_login(self, Content.register_count, Content.login_password)
+        BaseOperate.app_login(self, Content.register_count, Content.login_password)
 
         logger.info("创建好友关系")
         BaseOperate.creat_friend_by_sql(self, Content.register_count, Content.spare_count)

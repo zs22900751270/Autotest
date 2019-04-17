@@ -1,0 +1,16 @@
+2019-04-16 14:48:17,072 - WebTest - INFO - You had select Chrome browser.
+2019-04-16 14:48:17,072 - WebTest - INFO - The test server url is: http://114.116.46.120:8090/#/sign/in
+2019-04-16 14:48:22,156 - WebTest - INFO - Starting Chrome browser.
+2019-04-16 14:48:29,123 - WebTest - INFO - Open url: http://114.116.46.120:8090/#/sign/in
+2019-04-16 14:48:30,330 - WebTest - INFO - Maximize the current window.
+2019-04-16 14:48:30,334 - WebTest - INFO - Set implicitly wait 10 seconds.
+2019-04-16 14:48:30,334 - WebTest - INFO - 登录后端
+2019-04-16 14:48:30,416 - WebTest - INFO - blue-btn存在
+2019-04-16 14:48:40,428 - WebTest - INFO - 通过class_name点击登录成功
+2019-04-16 14:48:44,480 - WebTest - INFO - 获取元素成功
+2019-04-16 14:48:47,935 - WebTest - INFO - 获取元素成功
+2019-04-16 14:48:57,387 - WebTest - INFO - 进入数据开放界面
+2019-04-16 14:48:57,757 - WebTest - INFO - 通过class_name点击数据开放成功
+2019-04-16 14:49:01,763 - WebTest - INFO - 进入数据需求“更多的”
+2019-04-16 14:49:03,987 - WebTest - INFO - 收尾工作
+2019-04-16 14:49:04,455 - WebTest - INFO - -------------------case_Sprint14_client_data_require_0001.py test finish------------------

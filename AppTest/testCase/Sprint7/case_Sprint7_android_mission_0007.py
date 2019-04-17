@@ -48,5 +48,4 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(len(title_name), 200)
 
 
- 
-    
+

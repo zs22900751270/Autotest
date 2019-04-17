@@ -1,0 +1,15 @@
+2019-04-17 09:25:36,156 - AppTest - INFO - 获取driver成功
+2019-04-17 09:25:36,156 - AppTest - INFO - D:/Autotest/AppTest/resource/Apk/
+2019-04-17 09:25:41,162 - AppTest - INFO - 继续
+2019-04-17 09:25:51,375 - AppTest - INFO - 继续2
+2019-04-17 09:25:55,555 - AppTest - INFO - 继续3
+2019-04-17 09:26:21,256 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 09:26:25,439 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 09:26:29,640 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 09:26:33,912 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 09:26:38,254 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button不存在于当前界面
+2019-04-17 09:26:38,388 - AppTest - INFO - com.hqd.app_manager:id/btn_selectNegative不存在于当前界面
+2019-04-17 09:26:38,388 - WebTest - INFO - APP登录
+2019-04-17 09:27:02,559 - WebTest - INFO - 进入我的资料界面
+2019-04-17 09:27:02,700 - AppTest - INFO - 截图失败或者单独运行时不截图
+2019-04-17 09:27:02,700 - AppTest - INFO - -------------------case_Sprint1_android_0005.py test finish------------------

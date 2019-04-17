@@ -25,6 +25,8 @@ class MyTestCase(unittest.TestCase):
         Common.touch_by_id(self, ID.toMarket)
 
         logger.info("点击进入应用详情")
+        tab_hit = Common.get_result_by_class_name_blank(self, "ul", ClassName.tab_tit)
+        Common.touch_tag_name_by_element(self, tab_hit, "li", 2)
         Common.open_app_detail_by_by_name(self, app_name)
         tab_title = Common.get_result_by_class_name_blank(self, "div", ClassName.tab_title)
         Common.touch_tag_name_by_element(self, tab_title, "span", 3)

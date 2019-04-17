@@ -22,7 +22,6 @@ class MyTestCase(unittest.TestCase):
         u"""在通讯录界面搜索好友"""
         logger.info("打开App")
         BaseOperate.startActivity(self, PhoneControl.package_name, PhoneControl.activity_name)
-        BaseOperate.wait(self, 5)
 
         logger.info("点击进行登录")
         BaseOperate.app_login(self, Content.register_count, Content.login_password)
@@ -48,5 +47,3 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual("个人资料", text)
 
 
-
-    

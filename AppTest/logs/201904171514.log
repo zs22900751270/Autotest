@@ -1,0 +1,41 @@
+2019-04-17 15:14:54,187 - AppTest - INFO - 获取driver成功
+2019-04-17 15:14:54,187 - AppTest - INFO - D:/Autotest/AppTest/resource/Apk/
+2019-04-17 15:14:59,194 - AppTest - INFO - 继续
+2019-04-17 15:15:09,499 - AppTest - INFO - 继续2
+2019-04-17 15:15:13,742 - AppTest - INFO - 继续3
+2019-04-17 15:15:39,197 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:15:43,397 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:15:47,672 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:15:51,901 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:15:56,101 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button不存在于当前界面
+2019-04-17 15:15:56,168 - AppTest - INFO - com.hqd.app_manager:id/btn_selectNegative存在于当前界面
+2019-04-17 15:16:00,452 - WebTest - INFO - 登录账号密码
+2019-04-17 15:16:25,217 - WebTest - INFO - 创建好友关系
+2019-04-17 15:16:25,868 - WebTest - INFO - 点击小秘, 进入会议界面
+2019-04-17 15:16:31,048 - AppTest - INFO - 通过class_name点击会议成功
+2019-04-17 15:16:33,049 - WebTest - INFO - 点击创建会议
+2019-04-17 15:16:49,231 - AppTest - INFO - 隐藏键盘成功
+2019-04-17 15:16:53,220 - AppTest - INFO - 隐藏键盘成功
+2019-04-17 15:17:18,624 - WebTest - INFO - 进行修改会议时间
+2019-04-17 15:17:18,970 - WebTest - INFO - 判断会议是否创建成功
+2019-04-17 15:17:19,173 - AppTest - INFO - text包含在list元素中
+2019-04-17 15:17:19,173 - WebTest - INFO - 点击右上角“...”
+2019-04-17 15:17:19,906 - AppTest - INFO - 通过class_name点击meeting_test成功
+2019-04-17 15:17:26,143 - WebTest - INFO - 点击取消会议
+2019-04-17 15:17:26,473 - AppTest - INFO - 通过class_name点击取消会议成功
+2019-04-17 15:17:28,473 - WebTest - INFO - 输入取消会议的原因, 点击确定
+2019-04-17 15:17:35,865 - WebTest - INFO - 查看是否取消成功
+2019-04-17 15:17:36,066 - WebTest - INFO - 切换账号
+2019-04-17 15:17:47,286 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:17:51,542 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:17:55,762 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:17:59,986 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button存在于当前界面
+2019-04-17 15:18:04,254 - AppTest - INFO - com.android.packageinstaller:id/permission_deny_button不存在于当前界面
+2019-04-17 15:18:04,334 - AppTest - INFO - com.hqd.app_manager:id/btn_selectNegative不存在于当前界面
+2019-04-17 15:18:49,864 - WebTest - INFO - 点击小秘, 进入会议界面
+2019-04-17 15:18:54,850 - AppTest - INFO - 通过class_name点击会议成功
+2019-04-17 15:18:56,850 - WebTest - INFO - 点击进入会议详情
+2019-04-17 15:19:08,152 - AppTest - INFO - 通过class_name点击meeting_test成功
+2019-04-17 15:19:10,153 - WebTest - INFO - 判断是否进入会议详情界面
+2019-04-17 15:19:10,344 - AppTest - INFO - 截图失败或者单独运行时不截图
+2019-04-17 15:19:10,344 - AppTest - INFO - -------------------case_Sprint8_android_meeting_0074.py test finish------------------

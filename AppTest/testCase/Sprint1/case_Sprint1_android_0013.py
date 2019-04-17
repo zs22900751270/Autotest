@@ -17,7 +17,7 @@ class MyTestCase(unittest.TestCase):
     @classmethod
     def tearDown(self):
         BaseOperate.report_screen_shot(self, self.case_name)
-        BaseOperate.modify_user_info_by_sql(self, "realname", Content.register_realname, Content.register_count)
+        BaseOperate.modify_mail_address_by_user(self, Content.register_count, Content.register_mail_address)
         BaseOperate.uninstallApp(self, PhoneControl.package_name)
         BaseOperate.quit(self)
 
@@ -33,13 +33,13 @@ class MyTestCase(unittest.TestCase):
         BaseOperate.touch_id_by_index(self, PhoneControl.id_me_icon)
 
         logger.info("修改资料")
-        BaseOperate.touch_id_by_index(self, PhoneControl.id_true_name)
-        BaseOperate.sendTextById(self, PhoneControl.id_infor_modify, "newName1122334")
+        BaseOperate.touch_id_by_index(self, PhoneControl.id_mail)
+        BaseOperate.sendTextById(self, PhoneControl.id_infor_modify, Content.register_mail_address)
         BaseOperate.touch_id_by_index(self, PhoneControl.id_toolbar_right_tv)
         BaseOperate.touch_id_by_index(self, PhoneControl.id_toolbar_right_tv)
 
         logger.info("从后台获取信息，与前台进行比较")
-        realname = BaseOperate.get_realname_by_phone(self, Content.register_count)
-        self.assertEqual(realname, "newName1122334")
+        realname = BaseOperate.get_mail_address_by_user(self, Content.register_count)
+        self.assertEqual(realname, Content.register_mail_address)
 
 

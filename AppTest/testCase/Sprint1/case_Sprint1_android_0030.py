@@ -31,11 +31,8 @@ class MyTestCase(unittest.TestCase):
 
         logger.info("输入格式错误的邮箱")
         DZ = "huiyanni@163@163.com"
-        BaseOperate.sendTextById(self, PhoneControl.me_data_mail_input, DZ)
+        BaseOperate.sendTextById(self, PhoneControl.id_infor_modify, DZ)
         BaseOperate.touch_id_by_index(self, PhoneControl.id_toolbar_right_tv, t=0)
         statue = BaseOperate.find_toast(self, "请输入正确的邮箱地址")
         self.assertTrue(statue)
 
-
-
-    

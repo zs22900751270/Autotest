@@ -38,5 +38,3 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(statue)
 
 
-
-    

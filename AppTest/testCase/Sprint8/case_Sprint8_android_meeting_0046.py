@@ -83,7 +83,7 @@ class MyTestCase(unittest.TestCase):
 
         logger.info("点击进入会议详情,选择不参加会议")
         BaseOperate.touch_text_by_class_name(self, PhoneControl.class_name_TextView, "meeting_not_join")
-        BaseOperate.touch_text_by_class_name(self, PhoneControl.class_name_TextView, "不参加")
+        BaseOperate.touch_text_by_class_name(self, PhoneControl.class_name_TextView, "不参与")
         BaseOperate.sendTextById(self, PhoneControl.id_input, "not_join_reason")
         BaseOperate.touch_id_by_index(self, PhoneControl.id_toolbar_right_tv)
         BaseOperate.go_back(self)
@@ -108,5 +108,4 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(over_res)
 
 
- 
-     
+

@@ -29,14 +29,14 @@ class MyTestCase(unittest.TestCase):
         logger.info("进入我的资料界面")
         BaseOperate.touch_id_by_index(self, PhoneControl.id_me_icon)
 
-        logger.info("判断姓名是否修改成功")
-        old_real_name = BaseOperate.get_text_by_id(self, PhoneControl.id_true_name)
-        BaseOperate.touch_id_by_index(self, PhoneControl.id_true_name)
+        logger.info("判断邮箱是否修改成功")
+        old_real_name = BaseOperate.get_text_by_id(self, PhoneControl.id_mail)
+        BaseOperate.touch_id_by_index(self, PhoneControl.id_mail)
         BaseOperate.clear_text_by_id(self, PhoneControl.id_infor_modify)
         BaseOperate.go_back(self)
-        new_real_name = BaseOperate.get_text_by_id(self, PhoneControl.id_true_name)
+        new_real_name = BaseOperate.get_text_by_id(self, PhoneControl.id_mail)
         self.assertTrue(old_real_name == new_real_name)
 
 
 
-    
+
